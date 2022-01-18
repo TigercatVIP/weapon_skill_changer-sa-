@@ -1,0 +1,333 @@
+// This file was decompiled using SASCM.ini published on 2021-07-05
+{$CLEO .cs}
+{$USE ini}
+
+0000: NOP 
+if 
+   not read_int_from_ini_file 0@ = read_int_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "SETTINGS" key "KEY1" 
+   not read_int_from_ini_file 1@ = read_int_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "SETTINGS" key "KEY2" 
+   not read_int_from_ini_file 2@ = read_int_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "SETTINGS" key "KEY3" 
+if 
+read_float_from_ini_file 3@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "COLT45_GANGSTER" 
+read_float_from_ini_file 4@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "SILENCED_GANGSTER" 
+read_float_from_ini_file 5@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "DEAGLE_GANGSTER" 
+read_float_from_ini_file 6@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "SHOTGUN_GANGSTER" 
+read_float_from_ini_file 7@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "SAWNOFF_GANGSTER" 
+read_float_from_ini_file 8@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "SPAS12_GANGSTER" 
+read_float_from_ini_file 9@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "M_UZI_GANGSTER" 
+read_float_from_ini_file 10@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "TEC9_GANGSTER" 
+read_float_from_ini_file 11@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "MP5_GANGSTER" 
+read_float_from_ini_file 12@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "AK47_GANGSTER" 
+read_float_from_ini_file 13@ = read_float_from_ini_file "CLEO\WEAPON SKILL CHANGER.INI" section "WEAPSKILL" key "M4_GANGSTER" 
+
+:NONAME_862
+wait 0 
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 22 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_987 
+if 
+is_key_pressed 0@ 
+jf @NONAME_923 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 69 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_923
+if 
+is_key_pressed 1@ 
+jf @NONAME_954 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 69 to 3@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_954
+if 
+is_key_pressed 2@ 
+jf @NONAME_987 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 69 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_987
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 23 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1108 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1044 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 70 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1044
+if 
+is_key_pressed 1@ 
+jf @NONAME_1075 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 70 to 4@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1075
+if 
+is_key_pressed 2@ 
+jf @NONAME_1108 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 70 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1108
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 24 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1229 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1165 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 71 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1165
+if 
+is_key_pressed 1@ 
+jf @NONAME_1196 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 71 to 5@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1196
+if 
+is_key_pressed 2@ 
+jf @NONAME_1229 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 71 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1229
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 25 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1350 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1286 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 72 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1286
+if 
+is_key_pressed 1@ 
+jf @NONAME_1317 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 72 to 6@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1317
+if 
+is_key_pressed 2@ 
+jf @NONAME_1350 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 72 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1350
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 26 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1471 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1407 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 73 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1407
+if 
+is_key_pressed 1@ 
+jf @NONAME_1438 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 73 to 7@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1438
+if 
+is_key_pressed 2@ 
+jf @NONAME_1471 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 73 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1471
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 27 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1592 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1528 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 74 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1528
+if 
+is_key_pressed 1@ 
+jf @NONAME_1559 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 74 to 8@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1559
+if 
+is_key_pressed 2@ 
+jf @NONAME_1592 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 74 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1592
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 28 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1713 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1649 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 75 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1649
+if 
+is_key_pressed 1@ 
+jf @NONAME_1680 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 75 to 9@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1680
+if 
+is_key_pressed 2@ 
+jf @NONAME_1713 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 75 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1713
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 32 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1834 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1770 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 75 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1770
+if 
+is_key_pressed 1@ 
+jf @NONAME_1801 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 75 to 10@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1801
+if 
+is_key_pressed 2@ 
+jf @NONAME_1834 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 75 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1834
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 29 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_1955 
+if 
+is_key_pressed 0@ 
+jf @NONAME_1891 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 76 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1891
+if 
+is_key_pressed 1@ 
+jf @NONAME_1922 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 76 to 11@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_1922
+if 
+is_key_pressed 2@ 
+jf @NONAME_1955 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 76 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_1955
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 30 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_2076 
+if 
+is_key_pressed 0@ 
+jf @NONAME_2012 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 77 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_2012
+if 
+is_key_pressed 1@ 
+jf @NONAME_2043 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 77 to 12@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_2043
+if 
+is_key_pressed 2@ 
+jf @NONAME_2076 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 77 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_2076
+if and
+02D8:   actor $PLAYER_ACTOR current_weapon == 31 
+00E1:   player 0 pressed_key 6 
+jf @NONAME_2197 
+if 
+is_key_pressed 0@ 
+jf @NONAME_2133 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 78 to 0.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_2133
+if 
+is_key_pressed 1@ 
+jf @NONAME_2164 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 78 to 13@ 
+08F8: display_stat_update_box 1 
+
+:NONAME_2164
+if 
+is_key_pressed 2@ 
+jf @NONAME_2197 
+08F8: display_stat_update_box 0 
+062A: change_float_stat 78 to 999.0 
+08F8: display_stat_update_box 1 
+
+:NONAME_2197
+jump @NONAME_862 
