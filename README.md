@@ -1,3 +1,4 @@
+Before using the mod, you have to compile it using Sanny Builder.
 
 Installation:
 -------------
@@ -14,7 +15,4 @@ Aditionally, you can set in the ini, the amount of skill you want between 0 and 
 
 ENJOY!
 
-Author: Mr.Angel
-Youtube: https://www.youtube.com/channel/UCyzwmO7XzujxC07nJ43pegw
-Guitar Covers: https://www.youtube.com/channel/UCLdahplW-VxZAKNfs81ofRw
-Instagram: https://www.instagram.com/mr.angel_d7/
+Author: Tigercat_VIP
