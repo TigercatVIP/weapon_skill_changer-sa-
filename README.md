@@ -1,5 +1,6 @@
 Before using the mod, you have to compile it using Sanny Builder.
-
+ 
+ 
 Installation:
 -------------
 Just copy the "Weapon Skill Changer 2.0", and put it into your Modloader folder
